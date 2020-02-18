@@ -1,0 +1,214 @@
+h1 {
+	font-family: 'Permanent Marker', cursive;
+	font-size:6.2rem;
+	line-height:5rem;
+}
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	letter-spacing: 3px;
+	font-size:2.4rem;
+	line-height:2rem;
+	text-transform: uppercase;
+	}
+
+h3 {
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+letter-spacing: 3px;
+font-size:1.4rem;
+line-height:0rem;
+text-transform: uppercase;
+}
+
+header {
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	padding:0 2rem;
+	background-color:#000b28;
+}
+
+header .header-logo {
+	max-width:200px;
+	min-width:80px;
+	}
+
+header .header-logo svg {
+	max-width:100%;
+}
+
+body ul {
+	list-style:none;
+} 
+
+.navigation-menu > ul {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	
+
+}
+
+.navigation-menu > ul > li {
+	margin: 0 1rem;
+	word-break: keep-all;
+	white-space: nowrap;
+	font-size:calc(0.1rem + 1vw);
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	}
+.navigation-menu > ul > li > a {
+	text-decoration: none;
+	width:100%;
+	color:white;
+	padding:2rem;
+	transition: 0.25s ease all;
+	background-color:black;
+
+}
+
+.navigation-menu > ul > li > a:hover {
+	background-color:white;
+	color:black;
+	border: 1px solid transparent;
+	transition-duration: 1s all;
+	transform: translate3d(1rem,1rem,0.5rem)
+}
+
+
+.navigation-menu > ul > li > a:hover + .child-nav, .navigation-menu .child-nav:hover{
+opacity: 1;
+visibility: visible;
+
+}
+
+
+.navigation-menu .navigation-menu-item {
+	position:relative;
+	
+}
+
+.navigation-menu .child-nav{
+	background-color: white;
+	position:absolute;
+	padding: 0;
+	top:100%;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+}
+
+
+
+.navigation-menu .child-nav > * > a {
+	color:black;
+	text-decoration:none;
+	width:100%;
+}
+
+body {
+	margin:0;
+}
+
+/* Hero Section */
+
+.hero-section {
+    background-image: linear-gradient(45deg, #00a9ff 50%, #ff3535 50%),url(https://i.redd.it/x7eqk6ti8k7y.png);	background-position: center;
+	background-size: cover;
+	background-blend-mode: overlay;
+	color:white;
+	text-align: center;
+
+}
+
+.hero-slide {
+	width: 100%; /* full width */
+	margin-right: 10px;
+}
+
+.hero-buttons {
+	padding: 3rem 0;
+}
+
+.button {
+	padding: 1rem 2rem;
+	background: linear-gradient(0deg, orange, #ffcd66);
+	border-radius: 4px;
+	margin: 1rem;
+	transition: 100ms ease-in-out all;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	letter-spacing: 3px;
+	font-size:1.4rem;
+	line-height:0rem;
+	text-transform: uppercase;
+	color:black;
+	text-decoration: none;
+}
+
+.button-alt {
+	background: white;
+	color:black;
+}
+
+
+.button:hover {
+	background:black;
+	color:white;
+}
+
+
+.section-header {
+	margin:auto;
+	padding:2rem;
+	text-align:center;
+}
+
+.wrapper {
+	max-width: 1400px;
+	padding: 0 2rem;
+	margin: auto;
+}
+
+main {
+}
+
+.card-group {
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card-group .card {
+	text-align:center;
+	flex: 1 0 300px;
+	margin:0.5rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.card-img {
+	height: 250px;
+}
+
+.card-group .card img {
+	object-fit: fill;
+	object-position: center;
+	height: 100%;
+}
+
+.card-group .card h3 {
+
+}
+
+
+@media (max-width:600px) {
+	nav {
+		display: none;
+	}
+
+
+}
