@@ -212,3 +212,46 @@ main {
 
 
 }
+
+/* Footer */
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 4rem;
+	background-color: #1b1b1b;
+}
+
+.footer-logo svg {
+	max-width: 200px;
+}
+
+.footer-navigation-menu > ul {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-navigation-menu > ul > li {
+	margin: 0 0.5rem;
+	word-break: keep-all;
+	white-space: nowrap;
+	font-size:calc(0.1rem + 1.4vw);
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+.footer-navigation-menu > ul > li > a {
+	text-decoration: none;
+	width:100%;
+	padding: 0 1rem;
+	color:white;
+	transition: 0.25s ease all;
+}
+
+.footer-navigation-menu > ul > li > a:hover {
+	text-decoration: none;
+	width: 100%;
+	color: black;
+}
